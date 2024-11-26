@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil Tur</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <nav>
+            <a href="#inicio"><img class="logo" src="assets/images/logo.jpg" alt="Logomarca da Brasil Tur"></a>
+            <p><a id="brasil_tur" href="#inicio">Brasil Tur</a></p>
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#pacotes">Pacotes</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <form class="search-bar">
+                <input type="text" placeholder="Buscar destinos" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main>
+        <!-- Introdução -->
+        <section id="inicio">
+            <img src="./assets/images/imagem-rio-de-janeiro.jpg" alt="Cidade do Rio de Janeiro" id="cidade_rio_de_janeiro">
+            <h1>Seja bem-vindo à Brasil Tur</h1>
+            <p>Explore o mundo com nossos pacotes de viagens exclusivos e personalizados.</p>
+        </section>
+
+        <!-- Destinos -->
+        <section id="destinos">
+            <p>Destinos Populares</p>
+            <article>
+                <h2>Fortaleza</h2>
+                <img src="./assets/images/fortaleza.jpeg" title="Fortaleza" alt="Imagem de Fortaleza">
+                <p>Conheça as belezas de Fortaleza.</p>
+            </article>
+            <article>
+                <h2>Curitiba</h2>
+                <img src="./assets/images/curitiba.jpeg" title="Curitiba" alt="Imagem de Curitiba">
+                <p>Explore a modernidade de Curitiba.</p>
+            </article>
+            <article>
+                <h2>Gramado</h3>
+                <img src="assets/images/gramado.jpg" alt="Imagem de Gramado">
+                <p>Descubra o charme europeu de Gramado com nossos pacotes especiais.</p>
+            </article>
+            <article>
+                <h2>Rio de Janeiro</h3>
+                <img src="assets/images/rio_de_janeiro.jpg" alt="Imagem do Rio de Janeiro">
+                <p>Desfrute das praias icônicas e da vibrante cultura do Rio de Janeiro.</p>
+            </article>
+        </section>
+
+        <!-- Pacotes -->
+        <section id="pacotes">
+            <h2>Pacotes de Viagens</h2>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/" title="Pacotes de Viagens" frameborder="0" allowfullscreen></iframe>
+                <p>Confira nossos pacotes de viagens e escolha o destino dos seus sonhos.</p>
+            </div>
+        </section>
+
+        <section class="nossos_especialistas">
+            <h2>Conheça nossos Especialistas</h2>
+            <div class="especialistas">
+                <article>
+                    <img src="./assets/images/especialista_1.png" alt="Especialista 1">
+                    <h3>Fernando Saraiva</h3>
+                    <p>Especialista em Turismo</p>
+                    <a rel="noopener" href="https://www.linkedin.com/" target="_blank"><img src="./assets/images/linkedin.jpeg"></a>
+                </article>
+                <article>
+                    <img src="./assets/images/especialista_2.png" alt="Especialista 2">
+                    <h3>Maria Sampaio</h3>
+                    <p>Guia de Turismo</p>
+                    <a rel="noopener" href="https://www.linkedin.com/" target="_blank"><img src="./assets/images/linkedin.jpeg"></a>
+                </article>
+            </div>
+            
+        </section>
+
+        <!-- Sobre Nós -->
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+                <img id="equipe_imagem" src="assets/images/equipe_brasil_tur.png" alt="Nossa Equipe">
+                <p>Somos uma equipe dedicada a proporcionar as melhores experiências de viagem para nossos clientes.</p>
+                <a href="https://linkedin.com/in/nossa-equipe" target="_blank"><img id="linkedin_equipe" src="./assets/images/linkedin.jpeg"></a>             
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="dúvida">Dúvida</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem, sugestão ou comentário aqui"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensagem-status" style="display:none; color: green;">Mensagem enviada com sucesso!</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <nav>
+            <ul type="none">
+                <li><a href="#politica">Política de Privacidade</a></li>
+                <li><a href="#termos">Termos de Uso</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
+            </ul>
+        </nav>
+        <div class="rede_social">
+            <a rel="noopener" href="https://www.facebook.com" target="_blank"><img src="./assets/images/facebook.jpeg" alt="Facebook"></a>
+            <a rel="noopener" href="https://www.twitter.com" target="_blank"><img src="./assets/images/twitter.jpeg" alt="Twitter"></a>
+            <a rel="noopener" href="https://www.instagram.com" target="_blank"><img src="./assets/images/instagram.jpeg" alt="Instagram"></a>
+        </div>
+        <p>Contato: brasiltur@brasiltur.com | Telefone: (11) 1234-5678</p>
+    </footer> 
+
+</body>
+
+</html>

@@ -1,0 +1,372 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif; /* Define a fonte padrão como Arial, com fallback para sans-serif */
+    line-height: 1.6; /* Define a altura das linhas como 1.6 vezes o tamanho da fonte */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    background-color: #0b3e5e; /* Define um fundo cinza claro para a página */
+    color: #333; /* Define a cor do texto como um tom escuro de cinza */
+}
+
+a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #007acc; /* Define a cor dos links como azul */
+    transition: color 0.5s ease; /* Adiciona uma transição suave de cor ao interagir */
+}
+
+a:hover {
+    color: #005f99; /* Muda a cor do link para um azul mais escuro ao passar o mouse */
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5rem; /* Adiciona espaço abaixo dos títulos */
+    color: #222; /* Define um tom muito escuro de cinza para os títulos */
+}
+
+p {
+    margin: 0.5rem 0; /* Define um espaçamento vertical para os parágrafos */
+    color: rgb(255, 190, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Cabeçalho */
+header {
+    background-color: white; /* Define o fundo do cabeçalho como azul */
+    color: #fff; /* Define a cor do texto do cabeçalho como branco */
+    padding: 1rem 0; /* Adiciona espaçamento vertical no cabeçalho */
+    position: sticky; /* Faz o cabeçalho fixar no topo ao rolar a página */
+    top: 0; /* Posiciona o cabeçalho no topo da página */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destacar o cabeçalho */
+}
+
+header nav {
+    display: flex; /* Usa o layout flexível para organizar os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui espaço igualmente entre os itens */
+    width: 90%; /* Define a largura do nav como 90% do contêiner */
+    margin: 0 auto; /* Centraliza o nav horizontalmente */
+}
+
+header .logo {
+    max-height: 100px; /* Define a altura máxima do logotipo */
+    border-radius: 50%;
+}
+
+header .logo {
+    max-height: 100px; /* Define a altura máxima do logotipo */
+    transition: transform 1s ease; /* Adiciona uma transição suave para a rotação */
+}
+
+header .logo:hover {
+    transform: rotate(360deg); /* Gira o logotipo 360 graus ao passar o mouse */
+}
+
+header #brasil_tur {
+    color: #63c2fe;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+header #brasil_tur:hover {
+    color: rgb(255, 190, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header .menu {
+    display: flex; /* Exibe os itens do menu lado a lado */
+    list-style: none; /* Remove os marcadores padrão da lista */
+}
+
+header .menu li {
+    margin: 0 1rem; /* Adiciona espaço horizontal entre os itens do menu */
+}
+
+header .menu a {
+    font-weight: bold; /* Deixa o texto dos links do menu em negrito */
+    color: rgb(255, 190, 0); /* Define a cor dos links como branco */
+}
+
+header .menu a:hover {
+    text-decoration: underline; /* Adiciona sublinhado nos links ao passar o mouse */
+}
+
+header .search-bar {
+    display: flex; /* Exibe a barra de pesquisa como um grupo flexível */
+}
+
+header .search-bar input {
+    padding: 0.5rem; /* Adiciona preenchimento interno ao campo de texto */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px 0 0 5px; /* Arredonda os cantos esquerdo do campo */
+}
+
+header .search-bar button {
+    padding: 0.5rem 1rem; /* Define o espaço interno do botão */
+    border: none; /* Remove a borda padrão */
+    background-color: #63c2fe; /* Define o fundo do botão como azul escuro */
+    color: #fff; /* Define a cor do texto do botão como branco */
+    cursor: pointer; /* Adiciona o cursor de ponteiro ao passar o mouse */
+    border-radius: 10px; /* Arredonda os cantos direitos do botão */
+    transition: background-color 0.5s ease; /* Adiciona uma transição na mudança de cor do botão */
+}
+
+header .search-bar button:hover {
+    background-color: rgb(255, 190, 0); /* Altera a cor do botão para um azul mais escuro ao passar o mouse */
+    border-radius: 10px;
+}
+
+#cidade_rio_de_janeiro {
+    width: 100%;
+    height: 250px;
+}
+
+section p {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 190, 0);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #63c2fe;
+}
+
+#destinos article { 
+    display: flex; /* Usa layout flexível para organizar o conteúdo */ 
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */ 
+    align-items: center; /* Centraliza o conteúdo horizontalmente */ 
+    text-align: center; /* Centraliza o texto */ 
+}
+
+#destinos article img { 
+    display: block;
+    width: 100%; /* Define a largura das imagens para ocupar 100% do contêiner */
+    height: auto; /* Mantém a proporção das imagens */ 
+    max-width: 800px; /* Define a largura máxima das imagens */ 
+    max-height:400px; /* Define a altura máxima das imagens */ 
+    /* object-fit: cover; Garante que as imagens se ajustem ao contêiner sem distorção  */
+    border-radius: 5px; /* Adiciona bordas arredondadas às imagens */
+    text-align: center;
+ }
+
+ .especialistas { 
+    display: flex; justify-content: 
+    center; gap: 20px; /* Espaçamento entre os artigos */ 
+}
+
+.especialistas article { 
+    display: flex; flex-direction: column; 
+    align-items: center; width: 100%; /* Ajuste conforme necessário */ 
+    max-width: 200px; /* Ajuste conforme necessário */ 
+    text-align: center; 
+}
+ .especialistas img { 
+    width: 100px; /* Ajuste conforme necessário */ 
+    height: auto; /* Mantém a proporção da imagem */ 
+    display: block; margin: 0 auto; 
+}
+/* Seções Gerais */
+ section {
+    padding: 2rem; /* Adiciona espaço interno nas seções */
+    margin: 1rem auto; /* Centraliza as seções horizontalmente */
+    width: 90%; /* Define a largura como 90% do contêiner */
+    max-width: 1200px; /* Limita a largura máxima a 1200px */
+    background-color: #fff; /* Define o fundo das seções como branco */
+    border-radius: 5px; /* Arredonda os cantos das seções */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+}
+
+#sobre {
+    display: flex; /* Usa layout flexível para organizar o conteúdo */ 
+    flex-direction: column; /* Organiza o conteúdo em uma coluna */ 
+    align-items: center; /* Centraliza o conteúdo horizontalmente */ 
+    text-align: center;
+}
+
+#equipe_imagem {
+    width: 400px;
+    height: 300px;
+}
+
+#linkedin_equipe {
+    width: 100px;
+}
+
+#pacotes {
+    text-align: center;
+}
+
+/* Introdução */
+#inicio {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    background-color: #eef7ff; /* Define o fundo como um azul claro */
+    padding: 3rem; /* Adiciona espaço interno maior */
+    border-radius: 5px; /* Arredonda os cantos */
+    box-shadow: none; /* Remove qualquer sombra da seção */
+}
+
+#inicio h1 {
+    color: #63c2fe; /* Define a cor do título como azul */
+    font-size: 50px
+}
+
+
+/* Vídeos */
+#videos div {
+    margin-top: 2rem; /* Adiciona espaço acima do contêiner de vídeos */
+    text-align: center; /* Centraliza o conteúdo dos vídeos */
+}
+
+#videos iframe {
+    border-radius: 5px; /* Arredonda os cantos do iframe */
+    border: 2px solid #007acc; /* Adiciona uma borda azul ao iframe */
+}
+
+
+/* Formulário de Contato */
+#contato form {
+    display: flex; /* Usa layout flexível para organizar os campos */
+    flex-direction: column; /* Organiza os campos na vertical */
+    gap: 1rem; /* Adiciona espaço fixo entre os campos */
+}
+
+#contato form input, 
+#contato form select, 
+#contato form textarea, 
+#contato form button {
+    padding: 0.75rem; /* Adiciona espaço interno nos campos */
+    border: 1px solid #ccc; /* Adiciona uma borda cinza clara nos campos */
+    border-radius: 5px; /* Arredonda os cantos dos campos */
+    font-size: 1rem; /* Define o tamanho da fonte como 1rem */
+}
+
+#contato form button {
+    background-color: #63c2fe; /* Define o fundo do botão como azul */
+    color: #fff; /* Define a cor do texto como branco */
+    cursor: pointer; /* Mostra o cursor de ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor do botão */
+}
+
+#contato form button:hover {
+    background-color: #005f99; /* Altera a cor do botão para azul mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: rgb(255, 190, 0); /* Define o fundo do rodapé como azul */
+    color: #fff; /* Define a cor do texto do rodapé como branco */
+    text-align: center; /* Centraliza o conteúdo do rodapé */
+    padding: 1.5rem 0; /* Adiciona espaço interno vertical ao rodapé */
+    margin-top: 2rem; /* Adiciona espaço acima do rodapé */
+}
+
+footer ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento interno */
+}
+
+footer ul li {
+    display: inline; /* Faz os itens da lista ficarem lado a lado */
+    margin: 0 1rem; /* Adiciona espaço horizontal entre os itens */
+}
+
+footer ul a {
+    color: #fff; /* Define a cor dos links do rodapé como branco */
+    font-weight: bold; /* Deixa os links do rodapé em negrito */
+}
+
+footer .rede_social a {
+    margin: 0 3rem; /* Adiciona espaço horizontal entre os links das redes sociais */
+}
+
+.rede_social img {
+    width: 100px;
+    height: 100px;
+    border-radius: 30px
+}
+
+footer p {
+    margin-top: 1rem; /* Adiciona espaço acima do parágrafo */
+    font-size: 1rem; /* Define o tamanho da fonte menor */
+    opacity: 0.8; /* Reduz a opacidade do texto para torná-lo mais suave */
+    color: #0d5697;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column; /* Organiza os itens do nav em uma coluna */
+    }
+
+    header .menu {
+        flex-direction: column; /* Organiza os itens do menu verticalmente */
+        align-items: center; /* Centraliza os itens do menu */
+    }
+
+    header .menu li {
+        margin: 0.5rem 0; /* Reduz o espaçamento vertical entre os itens */
+    }
+
+    header .search-bar {
+        margin-top: 1rem; /* Adiciona espaço acima da barra de pesquisa */
+    }
+
+    #conteudo article {
+        flex-direction: column; /* Organiza o conteúdo dos artigos em uma coluna */
+        align-items: flex-start; /* Alinha o conteúdo dos artigos à esquerda */
+    }
+
+    #conteudo article img {
+        max-width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+        margin-bottom: 1rem; /* Adiciona espaço inferior à imagem */
+    }
+
+    #especialistas {
+        flex-direction: column; /* Organiza os especialistas em uma coluna */
+        align-items: center; /* Centraliza os especialistas */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        max-height: 40px; /* Reduz a altura máxima do logotipo */
+    }
+
+    header .menu a {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte dos links do menu */
+    }
+
+    header .search-bar input, 
+    header .search-bar button {
+        padding: 0.5rem; /* Reduz o preenchimento interno dos campos */
+    }
+
+    section {
+        padding: 1rem; /* Reduz o espaço interno das seções */
+    }
+
+    #inicio {
+        padding: 2rem; /* Reduz o espaço interno da seção de introdução */
+    }
+
+    #conteudo article button {
+        padding: 0.5rem; /* Reduz o preenchimento interno dos botões */
+    }
+
+    #contato form input, 
+    #contato form select, 
+    #contato form textarea, 
+    #contato form button {
+        padding: 0.5rem; /* Reduz o preenchimento interno dos campos */
+    }
+
+    footer {
+        padding: 1rem 0; /* Reduz o espaço interno vertical do rodapé */
+    }
+} */
