@@ -9,7 +9,6 @@
 </head>
 
 <body>
-    <!-- Cabeçalho -->
     <header>
         <nav>
             <a href="#inicio"><img class="logo" src="assets/images/logo.jpg" alt="Logomarca da Brasil Tur"></a>
@@ -21,23 +20,20 @@
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-            <form class="search-bar">
+            <form class="barra_pesquisa">
                 <input type="text" placeholder="Buscar destinos" required>
                 <button type="submit">Buscar</button>
             </form>
         </nav>
     </header>
 
-    <!-- Seção Principal -->
     <main>
-        <!-- Introdução -->
         <section id="inicio">
             <img src="./assets/images/imagem-rio-de-janeiro.jpg" alt="Cidade do Rio de Janeiro" id="cidade_rio_de_janeiro">
             <h1>Seja bem-vindo à Brasil Tur</h1>
             <p>Explore o mundo com nossos pacotes de viagens exclusivos e personalizados.</p>
         </section>
 
-        <!-- Destinos -->
         <section id="destinos">
             <p>Destinos Populares</p>
             <article>
@@ -62,7 +58,6 @@
             </article>
         </section>
 
-        <!-- Pacotes -->
         <section id="pacotes">
             <h2>Pacotes de Viagens</h2>
             <div>
@@ -72,7 +67,7 @@
         </section>
 
         <section class="nossos_especialistas">
-            <h2>Conheça nossos Especialistas</h2>
+            <h2>Conheça Nossos Especialistas</h2>
             <div class="especialistas">
                 <article>
                     <img src="./assets/images/especialista_1.png" alt="Especialista 1">
@@ -90,49 +85,43 @@
             
         </section>
 
-        <!-- Sobre Nós -->
         <section id="sobre">
             <h2>Sobre Nós</h2>
                 <img id="equipe_imagem" src="assets/images/equipe_brasil_tur.png" alt="Nossa Equipe">
                 <p>Somos uma equipe dedicada a proporcionar as melhores experiências de viagem para nossos clientes.</p>
-                <a href="https://linkedin.com/in/nossa-equipe" target="_blank"><img id="linkedin_equipe" src="./assets/images/linkedin.jpeg"></a>             
+                <a href="https://linkedin.com/" target="_blank"><img id="linkedin_equipe" src="./assets/images/linkedin.jpeg"></a>             
         </section>
 
-        <!-- Formulário de Contato -->
         <section id="contato">
-            <h2>Contato</h2>
-            <form id="form-contato">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+    <h2>Contato</h2>
+    <form id="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
-                <label for="assunto">Assunto:</label>
-                <select id="assunto" name="assunto" required>
-                    <option value="dúvida">Dúvida</option>
-                    <option value="sugestao">Sugestão</option>
-                    <option value="outro">Outro</option>
-                </select>
+        <label for="assunto">Assunto:</label>
+        <select id="assunto" name="assunto" required>
+            <option value="dúvida">Dúvida</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="outro">Outro</option>
+        </select>
 
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem, sugestão ou comentário aqui"></textarea>
+        <label for="telefone">Telefone/WhatsApp:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone ou WhatsApp" required>
 
-                <button type="submit">Enviar</button>
-            </form>
-            <p id="mensagem-status" style="display:none; color: green;">Mensagem enviada com sucesso!</p>
-        </section>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem, sugestão ou comentário aqui"></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="mensagem-status" style="display:none; color: green;">Mensagem enviada com sucesso!</p>
+</section>
+
     </main>
 
-    <!-- Rodapé -->
     <footer>
-        <nav>
-            <ul type="none">
-                <li><a href="#politica">Política de Privacidade</a></li>
-                <li><a href="#termos">Termos de Uso</a></li>
-                <li><a href="#ajuda">Ajuda</a></li>
-            </ul>
-        </nav>
         <div class="rede_social">
             <a rel="noopener" href="https://www.facebook.com" target="_blank"><img src="./assets/images/facebook.jpeg" alt="Facebook"></a>
             <a rel="noopener" href="https://www.twitter.com" target="_blank"><img src="./assets/images/twitter.jpeg" alt="Twitter"></a>

@@ -14,7 +14,7 @@ a {
     transition: color 0.5s ease; 
 }
 a:hover {
-    color: #005f99; 
+    color: #005f99;
 }
 
 h1, h2, h3 {
@@ -89,36 +89,36 @@ header .menu a {
 }
 
 header .menu a:hover {
-    text-decoration: underline; 
+    color: #63c2fe;
 }
 
-header .search-bar {
+header .barra_pesquisa {
     display: flex; 
 }
 
-header .search-bar input {
+header .barra_pesquisa input {
     padding: 0.5rem; 
-    border: none; 
-    border-radius: 5px 0 0 5px; 
+    border-radius: 10px 0 0 10px; 
 }
 
-header .search-bar button {
+header .barra_pesquisa button {
     padding: 0.5rem 1rem; 
     border: none; 
     background-color: #63c2fe; 
     color: #fff; 
     cursor: pointer; 
-    border-radius: 10px; 
+    border-radius: 0 10px 10px 0; 
     transition: background-color 0.5s ease; 
 }
-header .search-bar button:hover {
+header .barra_pesquisa button:hover {
     background-color: rgb(255, 190, 0); 
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0; 
 }
 
 #cidade_rio_de_janeiro {
     width: 100%;
     height: 250px;
+    border-radius: 10px;
 }
 
 section p {
@@ -142,14 +142,21 @@ section h2 {
 }
 
 #destinos article img { 
-    display: block;
+    display: block; 
     width: 100%; 
     height: auto; 
     max-width: 800px; 
-    max-height:400px; 
+    max-height: 400px; 
     border-radius: 5px; 
-    text-align: center;
- }
+    text-align: center; 
+    transition: transform 0.8s ease; 
+    margin: 5px;
+} 
+
+#destinos article img:hover { 
+    transform: scale(1.1);  
+}
+
 
  .especialistas { 
     display: flex; justify-content: 
@@ -201,7 +208,7 @@ section h2 {
 
 #inicio {
     text-align: center; 
-    background-color: #eef7ff; 
+    background-color: hsl(0, 0%, 100%); 
     padding: 3rem; 
     border-radius: 5px; 
     box-shadow: none; 
@@ -250,7 +257,7 @@ section h2 {
 }
 
 #contato form button:hover {
-    background-color: #005f99; 
+    background-color: rgb(255, 190, 0); 
 }
 
 
@@ -309,7 +316,7 @@ footer p {
         margin: 0.5rem 0; 
     }
 
-    header .search-bar {
+    header .barra_pesquisa {
         margin-top: 1rem; 
     }
 
@@ -338,8 +345,8 @@ footer p {
         font-size: 0.9rem; 
     }
 
-    header .search-bar input, 
-    header .search-bar button {
+    header .barra_pesquisa input, 
+    header .barra_pesquisa button {
         padding: 0.5rem; 
     }
 
